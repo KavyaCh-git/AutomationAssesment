@@ -29,9 +29,12 @@ public class AmazonTest {
 	@Test
 	public void testAmazonToSearch() throws InterruptedException {
 		// Navigate to Amazon
-		driver.get("https://www.amazon.com/");
+		driver.get("https://www.amazon.com");
 
-		Thread.sleep(8000);
+		if(driver.findElement(By.xpath("//h4[contains(text(),'Type the characters you see in this image:')]")).isDisplayed()) {
+		Thread.sleep(10000);
+		// Need to enter the captcha manually
+		}
 
 		// Search for "toys"
 		WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
