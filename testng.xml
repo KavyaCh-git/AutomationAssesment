@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Testing">
+    <test name="Automation Assesment">
+         <classes>
+             <class name="AutomationAssignment.AutomationAssignment.AmazonTest"/>
+             <class name="AutomationAssignment.AutomationAssignment.DeviceAPITest"/>
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->
